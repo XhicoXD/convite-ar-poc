@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <title>
+        Convite AR - Visita Rodolfo
+    </title>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs stats>
+        <a-entity scale="10 10 10">
+            <a-entity gltf-model="Passista.gltf" scale="10 10 10" position="1 1 -1">
+            </a-entity>
+            <a-text value="Faz um convite especial!"></a-text>
+            <!-- <a-marker-camera type='pattern' url='pattern-ar-ref.patt'></a-marker-camera> -->
+            <a-marker-camera type='hiro'></a-marker-camera>
+        </a-scene>
+    </body>
+</html>
